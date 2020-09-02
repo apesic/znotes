@@ -47,7 +47,6 @@ function notes-pick-widget
 	setopt local_options err_return
 
   local chosen=$(__notes-pick)
-  echo $chosen
   if [[ ! -z ${chosen} ]] ; then
     command "${EDITOR}" "${chosen}" < /dev/tty
   fi
